@@ -47,16 +47,5 @@ const fuelForFuel = function(fuel_mass) {
 		needed_fuel += fuelForFuel(needed_fuel);
 	}
 	return needed_fuel;
-/*
-
-	let fuel = 0;
-	let additional_mass = fue_mass;
-	while (additional_mass > 0) {
-		needed_fuel = Math.floor(additional_mass / 3) - 2;
-		fuel_sum += needed_fuel > 0 ? needed_fuel : 0;
-		console.log('AddMass: ' + additional_mass + ', fuel: ' + needed_fuel + ' -> total fuel: ' + fuel_sum)
-		additional_mass = needed_fuel; 
-	}
-*/
 }
 
