@@ -4,7 +4,6 @@ const { createInterface } = require('readline');
 const filename = process.argv[2];
 
 let fuel_sum = 0;
-let additional_mass = fuel_sum;
 
 (async function processLineByLine() {
 	try {
@@ -36,7 +35,6 @@ const fuelForMass = function(mass) {
 	if (fuel > 0) {
 		return fuel;
 	}
-
 	return 0;
 }
 
